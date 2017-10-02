@@ -4,14 +4,14 @@
   "author": "Andreas Jacob <andreas@cordobo.de> (http://cordobo.com/)",
   "description": "Cordova / PhoneGap Plugin Permission Settings for NSCameraUsageDescription, NSPhotoLibraryUsageDescription, NSPhotoLibraryAddUsageDescription and NSMicrophoneUsageDescription in iOS 11 by adding a declaration to the Info.plist file",
   "cordova": {
-    "id": "cordova-plugin-ios-camera-permissions",
+    "id": "cordova-plugin-ios-permissions",
     "platforms": [
       "ios"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cordobo/cordova-plugin-ios-camera-permissions.git"
+    "url": "git+https://github.com/cordobo/cordova-plugin-ios-permissions.git"
   },
   "keywords": [
     "cordova",
