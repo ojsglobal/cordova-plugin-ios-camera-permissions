@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<plugin id="cordova-plugin-ios-camera-permissions" version="1.2.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+<plugin id="cordova-plugin-ios-permissions" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>iOS Permissions</name>
     <author>Andreas Jacob (http://cordobo.com/)</author>
-    <description>Cordova / PhoneGap Plugin Permission Settings for NSCameraUsageDescription, NSPhotoLibraryAddUsageDescription, NSPhotoLibraryUsageDescription and NSMicrophoneUsageDescription in iOS 11 by adding a declaration to the Info.plist file</description>
+    <description>Cordova / PhoneGap Plugin Permission Settings for NSHealthUpdateUsageDescription, NSHealthShareUsageDescription, NSCameraUsageDescription, NSPhotoLibraryAddUsageDescription, NSPhotoLibraryUsageDescription and NSMicrophoneUsageDescription in iOS 11 by adding a declaration to the Info.plist file</description>
     <keywords>cordova, ios, app, security, permissions, nscamerausagedescription, nsphotolibraryaddusagedescription, nsphotolibraryusagedescription, nsmicrophoneusagedescription</keywords>
     <license>MIT</license>
     <engines>
@@ -28,5 +28,15 @@
             <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
                 <string>$PHOTOLIBRARY_USAGE_DESCRIPTION</string>
             </config-file>
+            
+            <preference name="HEALTH_READ_PERMISSION" default="This app needs read/write-access to Healthkit" />
+            <config-file target="*-Info.plist" parent="NSHealthShareUsageDescription">
+              <string>$HEALTH_READ_PERMISSION</string>
+            </config-file>
+               
+            <preference name="HEALTH_WRITE_PERMISSION" default="This app needs read/write-access to Healthkit" />
+            <config-file target="*-Info.plist" parent="NSHealthUpdateUsageDescription">
+              <string>$HEALTH_WRITE_PERMISSION</string>
+            </config-file>          
         </platform>
     </plugin>
