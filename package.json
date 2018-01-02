@@ -6,7 +6,7 @@
   "cordova": {
     "id": "cordova-plugin-permissions",
     "platforms": [
-      "ios"
+      "ios","android"
     ]
   },
   "repository": {
@@ -36,7 +36,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cordobo/cordova-plugin-ios-camera-permissions/issues"
+    "url": "https://github.com/ojsglobal/cordova-plugin-permissions/issues"
   },
-  "homepage": "https://github.com/cordobo/cordova-plugin-ios-camera-permissions#readme"
+  "homepage": "https://github.com/ojsglobal/cordova-plugin-permissions#readme"
 }
