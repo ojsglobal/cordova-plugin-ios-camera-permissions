@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <plugin id="cordova-plugin-ios-permissions" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
-    <name>iOS Permissions</name>
+    <name>Plugin Permissions</name>
     <author>Andreas Jacob (http://cordobo.com/)</author>
     <description>Cordova / PhoneGap Plugin Permission Settings for NSHealthUpdateUsageDescription, NSHealthShareUsageDescription, NSCameraUsageDescription, NSPhotoLibraryAddUsageDescription, NSPhotoLibraryUsageDescription and NSMicrophoneUsageDescription in iOS 11 by adding a declaration to the Info.plist file</description>
     <keywords>cordova, ios, app, security, permissions, nscamerausagedescription, nsphotolibraryaddusagedescription, nsphotolibraryusagedescription, nsmicrophoneusagedescription</keywords>
