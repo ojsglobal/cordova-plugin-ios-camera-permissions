@@ -40,9 +40,16 @@
             </config-file>          
         </platform>
     
-    <platform name="android">
-        <preference name="android-manifest/application/activity/@android:windowSoftInputMode" value="adjustPan" />
-    </platform>
-    
+  <platform name="android">
+  <config-file target="AndroidManifest.xml" parent="/manifest/application">
+    <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/app_name" android:launchMode="singleTop" android:name="testa" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan">
+      <intent-filter>
+        <action android:name="android.intent.action.SEND" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <data android:mimeType="*/*" />
+      </intent-filter>
+    </activity>
+  </config-file>
+</platform>
     
     </plugin>
