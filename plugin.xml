@@ -39,4 +39,10 @@
               <string>$HEALTH_WRITE_PERMISSION</string>
             </config-file>          
         </platform>
+    
+    <platform name="android">
+        <preference name="android-manifest/application/activity/@android:windowSoftInputMode" value="adjustPan" />
+    </platform>
+    
+    
     </plugin>
