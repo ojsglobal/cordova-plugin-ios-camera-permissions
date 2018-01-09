@@ -1,10 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<plugin id="cordova-plugin-permissions" version="1.0.6" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+<plugin id="cordova-plugin-permissions" version="1.0.7" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>Plugin Permissions</name>
     <author>Andreas Jacob (http://cordobo.com/)</author>
-    <description>Cordova / PhoneGap Plugin Permission Settings for NSHealthUpdateUsageDescription, NSHealthShareUsageDescription, NSCameraUsageDescription, NSPhotoLibraryAddUsageDescription, NSPhotoLibraryUsageDescription, NSMicrophoneUsageDescription, NSLocationAlwaysUsageDescription, and NSLocationWhenInUseUsageDescription in iOS 11 by adding a declaration to the Info.plist file</description>
-    <keywords>cordova, ios, app, security, permissions, nscamerausagedescription, nsphotolibraryaddusagedescription, nsphotolibraryusagedescription, nsmicrophoneusagedescription NSLocationAlwaysUsageDescription NSLocationWhenInUseUsageDescription
-    </keywords>
+    <description>Cordova / PhoneGap Plugin Permission Settings for NSHealthUpdateUsageDescription, NSHealthShareUsageDescription, NSCameraUsageDescription, NSPhotoLibraryAddUsageDescription, NSPhotoLibraryUsageDescription, NSMicrophoneUsageDescription, NSLocationAlwaysUsageDescription, NSLocationAlwaysAndWhenInUseUsageDescription,  and NSLocationWhenInUseUsageDescription in iOS 11 by adding a declaration to the Info.plist file</description>
+    <keywords>cordova, ios, app, security, permissions, nscamerausagedescription, nsphotolibraryaddusagedescription, nsphotolibraryusagedescription, nsmicrophoneusagedescription NSLocationAlwaysUsageDescription NSLocationWhenInUseUsageDescription NSLocationAlwaysAndWhenInUseUsageDescription</keywords>
     <license>MIT</license>
     <engines>
         <engine name="cordova" version=">=3.0.0"/>
@@ -40,17 +39,24 @@
               <string>$HEALTH_WRITE_PERMISSION</string>
             </config-file> 
             
-            <preference name="LOCATION_PERMISSION" default="This app needs your location to validate your position" />
+            <preference name="LOCATION_ALWAYS_PERMISSION" default="This app needs your location to validate your position" />
             <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
-              <string>$LOCATION_PERMISSION</string>
+              <string>$LOCATION_ALWAYS_PERMISSION</string>
             </config-file> 
             
             
-            <preference name="LOCATION_INUSE_PERMISSION" default="TThis app needs your location to validate your position" />
+            <preference name="LOCATION_INUSE_PERMISSION" default="This app needs your location to validate your position" />
             <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
               <string>$LOCATION_INUSE_PERMISSION</string>
             </config-file> 
             
+            
+            <preference name="LOCATION_ALWAYS_INUSE_PERMISSION" default="This app needs your location to validate your position" />
+            <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
+              <string>$LOCATION_ALWAYS_INUSE_PERMISSION</string>
+            </config-file> 
+            
+                        
         </platform>
     
     </plugin>
