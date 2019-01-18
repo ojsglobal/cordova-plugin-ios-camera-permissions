@@ -9,56 +9,11 @@
         <engine name="cordova" version=">=3.0.0"/>
         </engines>
         <platform name="ios">
-            <preference name="CAMERA_USAGE_DESCRIPTION" default="This app needs camera access"/>
-            <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
-                <string>$CAMERA_USAGE_DESCRIPTION</string>
-            </config-file>
-
-            <preference name="MICROPHONE_USAGE_DESCRIPTION" default="This app needs microphone access"/>
-            <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
-                <string>$MICROPHONE_USAGE_DESCRIPTION</string>
-            </config-file>
-
-            <preference name="PHOTOLIBRARY_ADD_USAGE_DESCRIPTION" default="This app needs write-access to photo library"/>
-            <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
-                <string>$PHOTOLIBRARY_ADD_USAGE_DESCRIPTION</string>
-            </config-file>
-
-            <preference name="PHOTOLIBRARY_USAGE_DESCRIPTION" default="This app needs read/write-access photo library access"/>
-            <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
-                <string>$PHOTOLIBRARY_USAGE_DESCRIPTION</string>
-            </config-file>
-            
-            <preference name="HEALTH_READ_PERMISSION" default="This app needs read/write-access to Healthkit" />
-            <config-file target="*-Info.plist" parent="NSHealthShareUsageDescription">
-              <string>$HEALTH_READ_PERMISSION</string>
-            </config-file>
-               
-            <preference name="HEALTH_WRITE_PERMISSION" default="This app needs read/write-access to Healthkit" />
-            <config-file target="*-Info.plist" parent="NSHealthUpdateUsageDescription">
-              <string>$HEALTH_WRITE_PERMISSION</string>
+          
+            <preference name="CONTACTS_USAGE_DESCRIPTION" default="QUiZLiPS needs a few contact details to match you with your friends" />
+            <config-file target="*-Info.plist" parent="NSContactsUsageDescription">
+              <string>$CONTACTS_USAGE_DESCRIPTION</string>
             </config-file> 
-            
-            <preference name="LOCATION_ALWAYS_PERMISSION" default="This app needs your GPS position to confirm any badge you scan is in a valid location" />
-            <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
-              <string>$LOCATION_ALWAYS_PERMISSION</string>
-            </config-file> 
-            
-            <preference name="LOCATION_INUSE_PERMISSION" default="This app needs your GPS position to confirm any badge you scan is in a valid location" />
-            <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-              <string>$LOCATION_INUSE_PERMISSION</string>
-            </config-file> 
-                
-            <preference name="LOCATION_ALWAYS_INUSE_PERMISSION" default="This app needs your GPS position to confirm any badge you scan is in a valid location" />
-            <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
-              <string>$LOCATION_ALWAYS_INUSE_PERMISSION</string>
-            </config-file> 
-            
-             <preference name="BLUETOOTH_USAGE_DESCRIPTION" default="This app needs permission to use Bluetooth" />
-            <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
-              <string>$BLUETOOTH_USAGE_DESCRIPTION</string>
-            </config-file> 
-            
             
             
             
