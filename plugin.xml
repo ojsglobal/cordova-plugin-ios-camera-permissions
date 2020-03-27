@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<plugin id="cordova-plugin-permissions" version="1.2.2" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+<plugin id="cordova-plugin-permissions" version="1.2.3" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>Plugin Permissions</name>
     <author>Andreas Jacob (http://cordobo.com/)</author>
     <description>Cordova / PhoneGap Plugin Permission Settings</description>
@@ -10,15 +10,51 @@
         </engines>
         <platform name="ios">
           
-             <preference name="BLUETOOTH_USAGE_DESCRIPTION" default="This app needs permission to use Bluetooth" />
-            <config-file target="*-Info.plist" parent="NSBluetoothAlwaysUsageDescription">
-              <string>$BLUETOOTH_USAGE_DESCRIPTION</string>
+           <preference name="CAMERA_USAGE_DESCRIPTION" default="This app needs camera access"/>
+            <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+                <string>$CAMERA_USAGE_DESCRIPTION</string>
+            </config-file>
+
+            <preference name="MICROPHONE_USAGE_DESCRIPTION" default="This app needs microphone access"/>
+            <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
+                <string>$MICROPHONE_USAGE_DESCRIPTION</string>
+            </config-file>
+
+            <preference name="PHOTOLIBRARY_ADD_USAGE_DESCRIPTION" default="This app needs write-access to photo library"/>
+            <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
+                <string>$PHOTOLIBRARY_ADD_USAGE_DESCRIPTION</string>
+            </config-file>
+
+            <preference name="PHOTOLIBRARY_USAGE_DESCRIPTION" default="This app needs read/write-access photo library access"/>
+            <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+                <string>$PHOTOLIBRARY_USAGE_DESCRIPTION</string>
+            </config-file>
+
+            <preference name="LOCATION_ALWAYS_PERMISSION" default="This app needs your GPS position to confirm any badge you scan is in a valid location" />
+            <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+                <string>$LOCATION_ALWAYS_PERMISSION</string>
             </config-file> 
-            
-            
-            
-            
-            
+
+            <preference name="LOCATION_INUSE_PERMISSION" default="This app needs your GPS position to confirm any badge you scan is in a valid location" />
+            <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+                <string>$LOCATION_INUSE_PERMISSION</string>
+            </config-file> 
+
+            <preference name="LOCATION_ALWAYS_INUSE_PERMISSION" default="This app needs your GPS position to confirm any badge you scan is in a valid location" />
+            <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
+                <string>$LOCATION_ALWAYS_INUSE_PERMISSION</string>
+            </config-file> 
+
+            <preference name="BLUETOOTH_USAGE_DESCRIPTION" default="This app needs permission to use Bluetooth" />
+            <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
+                <string>$BLUETOOTH_USAGE_DESCRIPTION</string>
+            </config-file> 
+
+
+            <preference name="BLUETOOTH_ALWAYS_USAGE_DESCRIPTION" default="This app needs permission to use Bluetooth" />
+            <config-file target="*-Info.plist" parent="NSBluetoothAlwaysUsageDescription">
+                <string>BLUETOOTH_ALWAYS_USAGE_DESCRIPTION</string>
+            </config-file> 
                         
         </platform>
     
