@@ -25,11 +25,16 @@
                 <string>$PHOTOLIBRARY_ADD_USAGE_DESCRIPTION</string>
             </config-file>
 
+            <preference name="PHOTOLIBRARY_ADDITIONS_DESCRIPTION" default="This app needs read/write-access photo library access"/>
+            <config-file target="*-Info.plist" parent="NSPhotoLibraryAdditionsUsageDescription">
+                <string>$PHOTOLIBRARY_ADDITIONS_DESCRIPTION</string>
+            </config-file>
+            
             <preference name="PHOTOLIBRARY_USAGE_DESCRIPTION" default="This app needs read/write-access photo library access"/>
             <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
                 <string>$PHOTOLIBRARY_USAGE_DESCRIPTION</string>
             </config-file>
-
+            
             <preference name="LOCATION_ALWAYS_PERMISSION" default="This app needs your GPS position to confirm any badge you scan is in a valid location" />
             <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
                 <string>$LOCATION_ALWAYS_PERMISSION</string>
