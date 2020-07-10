@@ -9,7 +9,7 @@
         <engine name="cordova" version=">=3.0.0"/>
         </engines>
         <platform name="ios">
-               
+           <!--    
             <preference name="PHOTOLIBRARY_ADD_USAGE_DESCRIPTION" default="This app needs write-access to photo library"/>
             <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
                 <string>$PHOTOLIBRARY_ADD_USAGE_DESCRIPTION</string>
@@ -19,6 +19,7 @@
             <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
                 <string>$PHOTOLIBRARY_USAGE_DESCRIPTION</string>
             </config-file>
+            !-->
             
             <preference name="BLUETOOTH_USAGE_DESCRIPTION" default="This app needs permission to use Bluetooth" />
             <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription">
